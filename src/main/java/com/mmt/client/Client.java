@@ -23,7 +23,7 @@ public final class Client {
 	public static void main(String args[]) throws Exception {
 
 		String host = "http://localhost:8080";
-		String context = "/CXFTest-0.0.1-SNAPSHOT";
+		String context = "/CXFTest";
 		// Sent HTTP GET request to query customer info
 		//defaults to JSON
 		System.out.println("Sent HTTP GET request to query customer info");

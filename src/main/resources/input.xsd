@@ -1,0 +1,16 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified">
+    <xs:element name="Customer" type="customer"/>
+    <xs:element name="Orders" type="order"/>
+    <xs:complexType name="customer">
+        <xs:all>
+            <xs:element name="id" type="xs:long" minOccurs="0"/>
+            <xs:element minOccurs="0" name="name" type="xs:string"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="order">
+        <xs:all>
+            <xs:element minOccurs="0" name="description" type="xs:string"/>
+            <xs:element name="id" type="xs:long"/>
+        </xs:all>
+    </xs:complexType>
+</xs:schema>
